@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baroda Basketball League</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #059669, #1e3a8a);
+            color: white;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8) !important;
+        }
+        .hero {
+            padding: 100px 0;
+        }
+        .card {
+            background-color: rgba(5, 150, 105, 0.2);
+            border: none;
+            transition: transform 0.3s;
+            color: white;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .modal-content {
+            background-color: #fff;
+            color: #333;
+        }
+        .sponsor {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Baroda Basketball League</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold mb-4">Baroda Basketball League</h1>
+                    <p class="lead mb-4">Experience the thrill of top-tier basketball! Check out the competing teams and their star players in this exciting tournament.</p>
+                    <button class="btn btn-light btn-lg" data-bs-toggle="modal">View Rosters</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="text-center mb-4">Tournament Details</h3>
+                            <p class="text-center">Stay tuned for more information about the upcoming Baroda Basketball League. We're preparing an unforgettable basketball experience for you!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="highlights" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Tournament Highlights</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-calendar3 fs-1 mb-3"></i>
+                            <h5 class="card-title">Date</h5>
+                            <p class="card-text">To be announced</p>
+                            <small>(Not decided yet)</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-geo-alt fs-1 mb-3"></i>
+                            <h5 class="card-title">Venue</h5>
+                            <p class="card-text">To be announced</p>
+                            <small>(Not decided yet)</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-trophy fs-1 mb-3"></i>
+                            <h5 class="card-title">Prize</h5>
+                            <p class="card-text">Up to 2 LAKHS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-people fs-1 mb-3"></i>
+                            <h5 class="card-title">Supported By</h5>
+                            <p class="card-text">Baroda District Basketball Association</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsor py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h3 class="mb-3">Proudly Sponsored By</h3>
+                    <h2 class="display-6 fw-bold">Courtyard Group</h2>
+                    <p class="lead">Empowering sports and community development</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <img src="src/logo.png" alt="Courtyard Group Logo" class="img-fluid" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Baroda Basketball League. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Rosters Modal -->
+    <div class="modal fade" id="rostersModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Team Rosters</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Here are the participating teams and their star players:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Vadodara Vipers</h6>
+                            <ul>
+                                <li>Rahul Patel (Captain)</li>
+                                <li>Amit Shah</li>
+                                <li>Priya Desai</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Surat Strikers</h6>
+                            <ul>
+                                <li>Neha Sharma (Captain)</li>
+                                <li>Raj Mehta</li>
+                                <li>Kiran Patel</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <h6>Ahmedabad Aces</h6>
+                            <ul>
+                                <li>Vikram Singh (Captain)</li>
+                                <li>Meera Reddy</li>
+                                <li>Arjun Kapoor</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Rajkot Rockets</h6>
+                            <ul>
+                                <li>Anita Desai (Captain)</li>
+                                <li>Rohan Patel</li>
+                                <li>Sanjay Verma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</body>
+</html>
